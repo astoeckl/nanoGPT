@@ -1,0 +1,277 @@
+2023-11-13 15:53:06,583 INFO    StreamThr :4024 [internal.py:wandb_internal():86] W&B internal server running at pid: 4024, started at: 2023-11-13 15:53:06.583305
+2023-11-13 15:53:06,584 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status
+2023-11-13 15:53:06,586 INFO    WriterThread:4024 [datastore.py:open_for_write():85] open: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/run-l0fg75o1.wandb
+2023-11-13 15:53:06,587 DEBUG   SenderThread:4024 [sender.py:send():380] send: header
+2023-11-13 15:53:06,601 DEBUG   SenderThread:4024 [sender.py:send():380] send: run
+2023-11-13 15:53:07,348 INFO    SenderThread:4024 [dir_watcher.py:__init__():211] watching files in: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files
+2023-11-13 15:53:07,348 INFO    SenderThread:4024 [sender.py:_start_run_threads():1122] run started: l0fg75o1 with start time 1699879986.583703
+2023-11-13 15:53:07,361 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: check_version
+2023-11-13 15:53:07,361 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: check_version
+2023-11-13 15:53:07,861 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: run_start
+2023-11-13 15:53:07,868 DEBUG   HandlerThread:4024 [system_info.py:__init__():32] System info init
+2023-11-13 15:53:07,868 DEBUG   HandlerThread:4024 [system_info.py:__init__():47] System info init done
+2023-11-13 15:53:07,868 INFO    HandlerThread:4024 [system_monitor.py:start():194] Starting system monitor
+2023-11-13 15:53:07,868 INFO    SystemMonitor:4024 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-13 15:53:07,869 INFO    HandlerThread:4024 [system_monitor.py:probe():214] Collecting system info
+2023-11-13 15:53:07,869 INFO    SystemMonitor:4024 [interfaces.py:start():190] Started cpu monitoring
+2023-11-13 15:53:07,869 INFO    SystemMonitor:4024 [interfaces.py:start():190] Started disk monitoring
+2023-11-13 15:53:07,869 DEBUG   HandlerThread:4024 [system_info.py:probe():196] Probing system
+2023-11-13 15:53:07,871 INFO    SystemMonitor:4024 [interfaces.py:start():190] Started gpuapple monitoring
+2023-11-13 15:53:07,872 INFO    SystemMonitor:4024 [interfaces.py:start():190] Started memory monitoring
+2023-11-13 15:53:07,872 INFO    SystemMonitor:4024 [interfaces.py:start():190] Started network monitoring
+2023-11-13 15:53:07,875 DEBUG   HandlerThread:4024 [system_info.py:_probe_git():181] Probing git
+2023-11-13 15:53:07,887 DEBUG   HandlerThread:4024 [system_info.py:_probe_git():189] Probing git done
+2023-11-13 15:53:07,887 DEBUG   HandlerThread:4024 [system_info.py:probe():244] Probing system done
+2023-11-13 15:53:07,887 DEBUG   HandlerThread:4024 [system_monitor.py:probe():223] {'os': 'macOS-13.2.1-arm64-arm-64bit', 'python': '3.11.5', 'heartbeatAt': '2023-11-13T12:53:07.871551', 'startedAt': '2023-11-13T12:53:06.576138', 'docker': None, 'cuda': None, 'args': ('config/train_shakespeare_char.py', '--device=cpu', '--compile=False', '--eval_iters=20', '--log_interval=1', '--block_size=64', '--batch_size=12', '--n_layer=4', '--n_head=4', '--n_embd=128', '--max_iters=2000', '--lr_decay_iters=2000', '--dropout=0.0'), 'state': 'running', 'program': '/Users/astoeckl/Documents/nanoGPT/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/karpathy/nanoGPT.git', 'commit': 'eba36e84649f3c6d840a93092cb779a260544d08'}, 'email': 'andreas.stoeckl@fh-hagenberg.at', 'root': '/Users/astoeckl/Documents/nanoGPT', 'host': 'MacBook-Pro-von-Andreas.local', 'username': 'astoeckl', 'executable': '/Users/astoeckl/Documents/nanoGPT/nanogpt/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 3721.8717193603516, 'used': 8.327022552490234}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 64.0}}
+2023-11-13 15:53:07,887 INFO    HandlerThread:4024 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-13 15:53:07,887 INFO    HandlerThread:4024 [system_monitor.py:probe():227] Publishing system info
+2023-11-13 15:53:07,887 DEBUG   HandlerThread:4024 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-13 15:53:07,887 DEBUG   HandlerThread:4024 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-13 15:53:07,887 INFO    HandlerThread:4024 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-13 15:53:07,889 DEBUG   SenderThread:4024 [sender.py:send():380] send: files
+2023-11-13 15:53:07,889 INFO    SenderThread:4024 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-11-13 15:53:07,892 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 15:53:07,892 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-13 15:53:07,893 DEBUG   SenderThread:4024 [sender.py:send():380] send: telemetry
+2023-11-13 15:53:07,893 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 15:53:08,354 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-metadata.json
+2023-11-13 15:53:08,354 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/requirements.txt
+2023-11-13 15:53:08,591 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 15:53:08,592 DEBUG   SenderThread:4024 [sender.py:send():380] send: history
+2023-11-13 15:53:08,592 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 15:53:08,592 INFO    SenderThread:4024 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 15:53:08,914 INFO    wandb-upload_0:4024 [upload_job.py:push():131] Uploaded file /var/folders/x_/jrkld_wd6rx480q5_s9z7x840000gn/T/tmpilt470b8wandb/3v8ntijf-wandb-metadata.json
+2023-11-13 15:53:09,359 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:09,359 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-summary.json
+2023-11-13 15:53:11,366 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:11,608 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:53:13,370 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:15,162 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 15:53:15,162 DEBUG   SenderThread:4024 [sender.py:send():380] send: history
+2023-11-13 15:53:15,162 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 15:53:15,163 INFO    SenderThread:4024 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 15:53:15,376 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:15,376 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-summary.json
+2023-11-13 15:53:16,629 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:53:17,383 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:19,391 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:21,399 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:21,649 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:53:21,986 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 15:53:21,986 DEBUG   SenderThread:4024 [sender.py:send():380] send: history
+2023-11-13 15:53:21,986 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 15:53:21,987 INFO    SenderThread:4024 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 15:53:22,400 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-summary.json
+2023-11-13 15:53:22,895 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 15:53:22,895 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 15:53:22,896 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-13 15:53:23,406 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:25,413 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:26,672 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:53:27,422 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:28,810 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 15:53:28,810 DEBUG   SenderThread:4024 [sender.py:send():380] send: history
+2023-11-13 15:53:28,811 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 15:53:28,811 INFO    SenderThread:4024 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 15:53:29,431 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:29,431 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-summary.json
+2023-11-13 15:53:31,438 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:31,696 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:53:33,445 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:35,455 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:35,866 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 15:53:35,866 DEBUG   SenderThread:4024 [sender.py:send():380] send: history
+2023-11-13 15:53:35,866 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 15:53:35,867 INFO    SenderThread:4024 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 15:53:36,460 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-summary.json
+2023-11-13 15:53:36,702 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:53:37,462 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:37,462 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/config.yaml
+2023-11-13 15:53:37,896 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 15:53:37,896 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 15:53:37,899 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-13 15:53:39,466 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:41,472 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:41,949 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:53:42,924 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 15:53:42,924 DEBUG   SenderThread:4024 [sender.py:send():380] send: history
+2023-11-13 15:53:42,924 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 15:53:42,925 INFO    SenderThread:4024 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 15:53:43,476 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:43,477 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-summary.json
+2023-11-13 15:53:45,484 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:46,972 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:53:47,495 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:49,504 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:49,896 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 15:53:49,897 DEBUG   SenderThread:4024 [sender.py:send():380] send: history
+2023-11-13 15:53:49,897 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 15:53:49,897 INFO    SenderThread:4024 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 15:53:50,509 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-summary.json
+2023-11-13 15:53:51,514 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:51,987 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:53:52,901 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-13 15:53:52,901 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-13 15:53:52,901 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: stop_status
+2023-11-13 15:53:53,525 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:55,533 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:56,391 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 15:53:56,392 DEBUG   SenderThread:4024 [sender.py:send():380] send: history
+2023-11-13 15:53:56,392 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 15:53:56,392 INFO    SenderThread:4024 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 15:53:56,538 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-summary.json
+2023-11-13 15:53:56,988 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:53:57,543 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:53:59,550 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:54:01,554 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:54:01,993 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:54:03,053 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-13 15:54:03,053 DEBUG   SenderThread:4024 [sender.py:send():380] send: history
+2023-11-13 15:54:03,053 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: summary_record
+2023-11-13 15:54:03,054 INFO    SenderThread:4024 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 15:54:03,089 DEBUG   SenderThread:4024 [sender.py:send():380] send: exit
+2023-11-13 15:54:03,089 INFO    SenderThread:4024 [sender.py:send_exit():585] handling exit code: 0
+2023-11-13 15:54:03,089 INFO    SenderThread:4024 [sender.py:send_exit():587] handling runtime: 55
+2023-11-13 15:54:03,090 INFO    SenderThread:4024 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 15:54:03,090 INFO    SenderThread:4024 [sender.py:send_exit():593] send defer
+2023-11-13 15:54:03,090 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:03,090 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 0
+2023-11-13 15:54:03,090 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:03,090 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-13 15:54:03,090 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 1
+2023-11-13 15:54:03,090 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:03,090 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 1
+2023-11-13 15:54:03,090 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:03,090 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-13 15:54:03,090 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 2
+2023-11-13 15:54:03,090 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:03,090 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 2
+2023-11-13 15:54:03,090 INFO    HandlerThread:4024 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-13 15:54:03,090 INFO    HandlerThread:4024 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-13 15:54:03,090 INFO    HandlerThread:4024 [interfaces.py:finish():202] Joined disk monitor
+2023-11-13 15:54:03,091 DEBUG   SystemMonitor:4024 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-13 15:54:03,091 DEBUG   SystemMonitor:4024 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-13 15:54:03,091 DEBUG   SystemMonitor:4024 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-13 15:54:03,565 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:54:03,565 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-summary.json
+2023-11-13 15:54:03,844 INFO    HandlerThread:4024 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-11-13 15:54:03,844 INFO    HandlerThread:4024 [interfaces.py:finish():202] Joined memory monitor
+2023-11-13 15:54:03,844 INFO    HandlerThread:4024 [interfaces.py:finish():202] Joined network monitor
+2023-11-13 15:54:03,844 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:03,844 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-13 15:54:03,844 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 3
+2023-11-13 15:54:03,844 DEBUG   SenderThread:4024 [sender.py:send():380] send: telemetry
+2023-11-13 15:54:03,844 DEBUG   SenderThread:4024 [sender.py:send():380] send: stats
+2023-11-13 15:54:03,844 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:03,844 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 3
+2023-11-13 15:54:03,844 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:03,844 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-13 15:54:03,844 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 4
+2023-11-13 15:54:03,844 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:03,844 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 4
+2023-11-13 15:54:03,844 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:03,844 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-13 15:54:03,844 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 5
+2023-11-13 15:54:03,844 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:03,844 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 5
+2023-11-13 15:54:03,845 DEBUG   SenderThread:4024 [sender.py:send():380] send: summary
+2023-11-13 15:54:03,845 INFO    SenderThread:4024 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-13 15:54:03,845 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:03,845 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-13 15:54:03,845 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 6
+2023-11-13 15:54:03,845 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:03,845 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 6
+2023-11-13 15:54:03,845 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:03,845 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-13 15:54:03,846 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:54:04,094 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-13 15:54:04,174 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 7
+2023-11-13 15:54:04,174 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: poll_exit
+2023-11-13 15:54:04,175 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:04,175 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 7
+2023-11-13 15:54:04,175 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:04,175 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-13 15:54:04,572 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/config.yaml
+2023-11-13 15:54:04,573 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-summary.json
+2023-11-13 15:54:04,601 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 8
+2023-11-13 15:54:04,601 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:04,601 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 8
+2023-11-13 15:54:04,601 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:04,601 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-11-13 15:54:04,601 INFO    SenderThread:4024 [job_builder.py:build():281] Attempting to build job artifact
+2023-11-13 15:54:04,603 INFO    SenderThread:4024 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-11-13 15:54:04,605 INFO    SenderThread:4024 [job_builder.py:build():369] adding wandb-job metadata file
+2023-11-13 15:54:04,609 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 9
+2023-11-13 15:54:04,609 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:04,609 DEBUG   SenderThread:4024 [sender.py:send():380] send: artifact
+2023-11-13 15:54:04,609 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 9
+2023-11-13 15:54:05,097 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-13 15:54:05,578 INFO    Thread-12 :4024 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:54:06,448 INFO    wandb-upload_0:4024 [upload_job.py:push():86] Skipped uploading /Users/astoeckl/Library/Application Support/wandb/artifacts/staging/tmpbqoprfpi
+2023-11-13 15:54:07,109 INFO    wandb-upload_1:4024 [upload_job.py:push():89] Uploaded file /Users/astoeckl/Library/Application Support/wandb/artifacts/staging/tmpd_elzpdp
+2023-11-13 15:54:09,206 INFO    SenderThread:4024 [sender.py:send_artifact():1456] sent artifact job-https___github.com_karpathy_nanoGPT.git_train.py - {'id': 'QXJ0aWZhY3Q6NjM2NzEyMTAx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExMjg5NTA0Mg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjI5MDUzMDE2', 'versionIndex': 0}}}
+2023-11-13 15:54:09,207 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:09,207 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-11-13 15:54:09,207 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: status_report
+2023-11-13 15:54:09,207 INFO    SenderThread:4024 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-13 15:54:09,595 INFO    SenderThread:4024 [dir_watcher.py:finish():388] scan: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files
+2023-11-13 15:54:09,596 INFO    SenderThread:4024 [dir_watcher.py:finish():402] scan save: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/requirements.txt requirements.txt
+2023-11-13 15:54:09,597 INFO    SenderThread:4024 [dir_watcher.py:finish():402] scan save: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log output.log
+2023-11-13 15:54:09,597 INFO    SenderThread:4024 [dir_watcher.py:finish():402] scan save: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/config.yaml config.yaml
+2023-11-13 15:54:09,602 INFO    SenderThread:4024 [dir_watcher.py:finish():402] scan save: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-summary.json wandb-summary.json
+2023-11-13 15:54:09,603 INFO    SenderThread:4024 [dir_watcher.py:finish():402] scan save: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-metadata.json wandb-metadata.json
+2023-11-13 15:54:09,604 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 10
+2023-11-13 15:54:09,606 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: poll_exit
+2023-11-13 15:54:09,606 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:09,607 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 10
+2023-11-13 15:54:09,607 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:09,607 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-11-13 15:54:09,608 INFO    SenderThread:4024 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-13 15:54:10,122 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-13 15:54:10,270 INFO    wandb-upload_1:4024 [upload_job.py:push():131] Uploaded file /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/output.log
+2023-11-13 15:54:10,275 INFO    wandb-upload_2:4024 [upload_job.py:push():131] Uploaded file /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/config.yaml
+2023-11-13 15:54:10,684 INFO    wandb-upload_0:4024 [upload_job.py:push():131] Uploaded file /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/requirements.txt
+2023-11-13 15:54:10,799 INFO    wandb-upload_3:4024 [upload_job.py:push():131] Uploaded file /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/files/wandb-summary.json
+2023-11-13 15:54:11,002 INFO    Thread-11 (_thread_body):4024 [sender.py:transition_state():613] send defer: 11
+2023-11-13 15:54:11,003 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:11,003 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 11
+2023-11-13 15:54:11,004 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:11,004 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-11-13 15:54:11,004 INFO    SenderThread:4024 [file_pusher.py:join():181] waiting for file pusher
+2023-11-13 15:54:11,004 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 12
+2023-11-13 15:54:11,004 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:11,004 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 12
+2023-11-13 15:54:11,004 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:11,004 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-11-13 15:54:11,005 INFO    SenderThread:4024 [file_stream.py:finish():595] file stream finish called
+2023-11-13 15:54:11,301 INFO    SenderThread:4024 [file_stream.py:finish():599] file stream finish is done
+2023-11-13 15:54:11,301 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 13
+2023-11-13 15:54:11,301 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:11,302 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 13
+2023-11-13 15:54:11,302 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:11,302 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-11-13 15:54:11,302 INFO    SenderThread:4024 [sender.py:transition_state():613] send defer: 14
+2023-11-13 15:54:11,302 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: defer
+2023-11-13 15:54:11,303 INFO    HandlerThread:4024 [handler.py:handle_request_defer():172] handle defer: 14
+2023-11-13 15:54:11,303 DEBUG   SenderThread:4024 [sender.py:send():380] send: final
+2023-11-13 15:54:11,303 DEBUG   SenderThread:4024 [sender.py:send():380] send: footer
+2023-11-13 15:54:11,303 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: defer
+2023-11-13 15:54:11,303 INFO    SenderThread:4024 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-11-13 15:54:11,304 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-13 15:54:11,305 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: poll_exit
+2023-11-13 15:54:11,305 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: server_info
+2023-11-13 15:54:11,306 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: get_summary
+2023-11-13 15:54:11,306 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: sampled_history
+2023-11-13 15:54:11,306 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: server_info
+2023-11-13 15:54:11,306 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-13 15:54:11,308 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: job_info
+2023-11-13 15:54:11,518 DEBUG   SenderThread:4024 [sender.py:send_request():407] send_request: job_info
+2023-11-13 15:54:11,519 INFO    MainThread:4024 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2023-11-13 15:54:11,520 INFO    MainThread:4024 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2023-11-13 15:54:11,520 INFO    MainThread:4024 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2023-11-13 15:54:11,521 DEBUG   HandlerThread:4024 [handler.py:handle_request():146] handle_request: shutdown
+2023-11-13 15:54:11,521 INFO    HandlerThread:4024 [handler.py:finish():866] shutting down handler
+2023-11-13 15:54:12,314 INFO    WriterThread:4024 [datastore.py:close():294] close: /Users/astoeckl/Documents/nanoGPT/wandb/run-20231113_155306-l0fg75o1/run-l0fg75o1.wandb
+2023-11-13 15:54:12,523 INFO    SenderThread:4024 [sender.py:finish():1534] shutting down sender
+2023-11-13 15:54:12,524 INFO    SenderThread:4024 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-13 15:54:12,524 INFO    SenderThread:4024 [file_pusher.py:join():181] waiting for file pusher

@@ -42,7 +42,7 @@ init_from = 'scratch' # 'scratch' or 'resume' or 'gpt2*'
 # wandb logging
 wandb_log = False # disabled by default
 wandb_project = 'owt'
-wandb_run_name = 'gpt2' # 'run' + str(time.time())
+wandb_run_name = 'embed128' # 'run' + str(time.time())
 # data
 dataset = 'openwebtext'
 gradient_accumulation_steps = 5 * 8 # used to simulate larger batch sizes
@@ -270,7 +270,7 @@ while True:
             })
         if losses['val'] < best_val_loss or always_save_checkpoint:
             best_val_loss = losses['val']
-            if iter_num > 0:
+            if iter_num >= 0:
                 checkpoint = {
                     'model': raw_model.state_dict(),
                     'optimizer': optimizer.state_dict(),
@@ -280,7 +280,17 @@ while True:
                     'config': config,
                 }
                 print(f"saving checkpoint to {out_dir}")
-                torch.save(checkpoint, os.path.join(out_dir, 'ckpt.pt'))
+                torch.save(checkpoint, os.path.join(out_dir, 'ckpt'+str(iter_num)+'.pt'))
+            #if iter_num == 0:
+                #checkpoint = {
+                    #'model': raw_model.state_dict(),
+                    #'optimizer': optimizer.state_dict(),
+                    #'model_args': model_args,
+                    #'iter_num': iter_num,
+                    #'best_val_loss': best_val_loss,
+                    #'config': config,
+                #}
+                #torch.save(checkpoint, os.path.join(out_dir, 'ckpt0.pt'))
     if iter_num == 0 and eval_only:
         break
 

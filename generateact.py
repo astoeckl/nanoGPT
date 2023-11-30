@@ -1,13 +1,10 @@
-"""
-Sample from a trained model
-"""
 import os
 import pickle
 from contextlib import nullcontext
 import torch
 import tiktoken
 from model import GPTConfig, GPT
-
+import lorem
 
 # -----------------------------------------------------------------------------
 init_from = 'resume' # either 'resume' (from an out_dir) or a gpt2 variant (e.g. 'gpt2-xl')
@@ -16,7 +13,7 @@ start = "\n" # or "<|endoftext|>" or etc. Can also specify a file, use as: "FILE
 num_samples = 10 # number of samples to draw
 max_new_tokens = 1 # number of tokens generated in each sample
 temperature = 0.8 # 1.0 = no change, < 1.0 = less random, > 1.0 = more random, in predictions
-top_k = 2 # retain only the top_k most likely tokens, clamp others to have 0 probability
+top_k = 1 # retain only the top_k most likely tokens, clamp others to have 0 probability
 seed = 1337
 device = 'cuda' # examples: 'cpu', 'cuda', 'cuda:0', 'cuda:1', etc.
 dtype = 'bfloat16' if torch.cuda.is_available() and torch.cuda.is_bf16_supported() else 'float16' # 'float32' or 'bfloat16' or 'float16'
@@ -74,17 +71,22 @@ else:
     encode = lambda s: enc.encode(s, allowed_special={"<|endoftext|>"})
     decode = lambda l: enc.decode(l)
 
-# encode the beginning of the prompt
-if start.startswith('FILE:'):
-    with open(start[5:], 'r', encoding='utf-8') as f:
-        start = f.read()
-start_ids = encode(start)
-x = (torch.tensor(start_ids, dtype=torch.long, device=device)[None, ...])
+
 
 # run generation
 with torch.no_grad():
     with ctx:
         for k in range(num_samples):
-            y = model.generate(x, max_new_tokens, temperature=temperature, top_k=top_k, savename = k)
+            # generate Start
+            #start = lorem.sentence() + " 1 2 3 4 5 6 7 8 9 10 11 12"
+            start = lorem.sentence() + " Calculate: 2*3="
+
+            # encode the beginning of the prompt
+            if start.startswith('FILE:'):
+                with open(start[5:], 'r', encoding='utf-8') as f:
+                    start = f.read()
+            start_ids = encode(start)
+            x = (torch.tensor(start_ids, dtype=torch.long, device=device)[None, ...])
+            y = model.generate(x, max_new_tokens, temperature=temperature, top_k=top_k, savename = str(13)+'_'+str(k))
             print(decode(y[0].tolist()))
             print('---------------')
